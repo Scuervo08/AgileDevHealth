@@ -1,6 +1,6 @@
 from django.db import models
 
-class enfermero(models.Model):
+class Enfermero(models.Model):
         documento_enfermero = models.IntegerField(primary_key=True)
         primer_nombre = models.CharField(max_length = 30)
         segundo_nombre = models.CharField(max_length = 30)
