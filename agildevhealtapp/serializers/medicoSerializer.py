@@ -1,6 +1,6 @@
 from string import printable
 from rest_framework import serializers
-from AgileDevHealthApp.models.medicos import Medicos
+from agildevhealtapp.models.medicos import Medicos
 
 class MedicoSerializer(serializers.ModelSerializer):
     class Meta:

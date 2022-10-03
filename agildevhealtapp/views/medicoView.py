@@ -1,9 +1,9 @@
 from rest_framework import generics, status
 from rest_framework.response import Response
 #from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
-from AgileDevHealthApp.serializers.medicoSerializer import MedicoSerializer
-from AgileDevHealthApp.serializers.userSerializer import UserSerializer
-from AgileDevHealthApp.models.medicos import Medicos
+from agildevhealtapp.serializers.medicoSerializer import MedicoSerializer
+from agildevhealtapp.serializers.UserSerializer import UserSerializer
+from agildevhealtapp.models.medicos import Medicos
 
 class MedicoListCreateView(generics.ListCreateAPIView):
     queryset = Medicos.objects.all()
